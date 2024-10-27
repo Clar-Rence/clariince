@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --bg-terminal: #000000;
+    --bg-black: #050505;
+    --clr-white: #ffffff;
+    --clr-green: #2ecc71;
+    --clr-sky: #00d2e8;
+    --clr-gray: #a1a1aa;
+    --clr-muted: #4d4d4d;
+    --line: 1px solid #141414;
+    --fnt-size: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 400px;
+    background-color: var(--bg-terminal);
+}
+.display-section {
+    padding: 0 10px;
+}
+.display-section .navigation {
+    padding: 10px 0;
+}
+.display-section .navigation h1 {
+    padding: 5px 20px;
+    width: fit-content;
+    border-radius: 10px;
+    color: var(--clr-green);
+    font-size: var(--fnt-size);
+    background-color: #333333;
+}
+.display-section .navigation h1 span {
+    color: var(--clr-white);
+}
+.student {
+    padding: 10px 0;
+    color: var(--clr-gray);
+    font-size: 12px;
+}
+.student span {
+    color: var(--clr-green);
+}
+.inputed p,
+.outputed p {
+    font-size: 12px;
+    padding: 10px 0;
+    color: var(--clr-green);
+}
+.inputed p span,
+.outputed p span {
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--clr-white);
+}
+.input-section {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    border-style: dashed;
+    border-top: 1px solid var(--clr-muted);
+}
+.input-section h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-white);
+}
+.input-section .chk-box {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    color: var(--clr-white);
+}
+.input-section .chk-box p {
+    font-size: 12px;
+}
+.input-section input[type = text] {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    color: var(--clr-white);
+    font-size: 15px;
+    border-radius: 10px;
+    border: var(--line);
+    padding-left: 10px;
+    background-color: var(--bg-black);
+}
+.input-section input[type = checkbox] {
+
+}
+.input-section input[type = submit] {
+    width: 100%;
+    display: none;
+    padding: 10px 15px;
+    color: var(--clr-green);
+}
